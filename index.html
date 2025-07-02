@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kawaii Services 🌸</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onload="mostrarBienvenida()">
+
+  <div id="modal-bienvenida" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h2>🌸 ¡Bienvenid@ a Kawaii Services! 🌸</h2>
+      <p>Gracias por visitarnos 💖</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo-text">🌸 Kawaii Services</div>
+    <nav>
+      <ul>
+        <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+        <li><button onclick="mostrarSeccion('quienes')">Quiénes Somos</button></li>
+        <li><button onclick="mostrarSeccion('servicios')">Servicios</button></li>
+        <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+        <li><button onclick="mostrarSeccion('login')">Login</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="slide visible">
+      <h1 id="titulo-escribir"></h1>
+      <p>Un lugar donde los servicios también pueden ser tiernos y encantadores 💕</p>
+      <button onclick="mostrarSeccion('servicios')" class="boton-kawaii">Ver servicios</button>
+    </section>
+
+    <section id="quienes" class="slide">
+      <h1>¿Quiénes somos?</h1>
+      <p>Somos una empresa dedicada a brindar servicios con ternura, creatividad y amor kawaii 💖✨.</p>
+    </section>
+
+    <section id="servicios" class="slide">
+      <h1>Servicios kawaii 🧁</h1>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide-item">✨ Diseño gráfico adorable</div>
+          <div class="slide-item">🌈 Asesorías tiernas para tu marca</div>
+          <div class="slide-item">🎀 Atención al cliente encantadora</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="slide">
+      <h1>Contáctanos 💌</h1>
+      <form id="form-contacto">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="email" id="email" placeholder="Tu correo" required />
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="boton-kawaii">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section id="login" class="slide">
+      <h1>Iniciar sesión 🐻</h1>
+      <form id="login-form">
+        <input type="text" id="usuario" placeholder="Usuario" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit" class="boton-kawaii">Entrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kawaii Services - Todos los derechos reservados 🌸</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <head>
+</body>
+</html>
+
